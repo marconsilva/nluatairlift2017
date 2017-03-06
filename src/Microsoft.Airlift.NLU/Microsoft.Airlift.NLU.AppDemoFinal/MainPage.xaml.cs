@@ -47,10 +47,11 @@ namespace Microsoft.Airlift.NLU.AppDemoFinal
 
             //EN
             outputMessagesManager = new OutputMessagesManager(OutputMessagesManagerLanguage.en_US);
-            bingSpeechManager = new BingSpeechManager("d70ff94024944732a8c68f45c1f3c2f9", BingSpeechManagerLanguage.en_US);
-            luisManager = new LuisManager("c6f3d045-ce31-421b-adfa-b839d4491836", "550dc6979d514e09aa089e3996d204b4");
+            bingSpeechManager = new BingSpeechManager("-- SPEECH API KEY --", BingSpeechManagerLanguage.en_US);
+            luisManager = new LuisManager("-- LUIS ID --", "-- LUIS API KEY --");
 
-            weatherServiceManager = new WeatherServiceManager("3b0224d98c41c7db245366776dd206c3");
+            //https://www.openweathermap.org/
+            weatherServiceManager = new WeatherServiceManager("-- WEATHER SERVICE API KEY--");
 
             gpioManager = new GpioManager();
             gpioManager.InitGpio();
